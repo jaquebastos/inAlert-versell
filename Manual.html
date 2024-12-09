@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de montagem: sensor de gases inflamáveis móvel</title>
+    <link rel="stylesheet" href="estilo-manual.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="artigo.html" class="nav-links">Artigo</a></li>
+                <a href="index.html"><li class="logo" class="nav-links"><img src="./assets/logo.png" alt="Logo"></li></a>
+                <li><a href="manual.html" class="nav-links">Manual</a></li>
+                <li><a href="sobre.html" class="nav-links">Sobre</a></li> 
+            </ul>   
+        </nav>
+    </header>
+
+    <section class="manual">
+        <div class="text-content">
+            <h1>Manual de instruções para <br> montagem do sensor móvel <br> de gases inflamáveis</h1>
+            <p>Faça você mesmo: um guia completo que ensina você a montar seu próprio sensor de gás móvel. Nesse manual você encontrará um passo a passo bem simples e intuitivo para montar seu próprio sensor InAlert, além de conter orientações práticas do que fazer quando estiver em um ambiente que contêm vazamento de gases. Acesse e descubra! </p>
+            <a href="https://www.canva.com/design/DAGSby6LIfQ/wdL-NuBBxzjRylVVEUxElQ/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0"><button class="download-button">Baixar</button></a>
+        </div>
+        <div class="manual-cover">
+            <img src="./assets/manual2.png" alt="Capa do Manual">
+        </div>
+    </section>
+
+    <section class="processo">
+        <h1 class="title"> <span class="spandestaque"> Processo </span> De <span class="spandestaque"> Desenvolvimento </span> 
+            <br>Do Projeto </h1>
+    
+          <div class="carrossel">
+              <button id="prev" class="seta esquerda">
+                    <img src="./assets/SETA_ESQUERDA.png" alt="Anterior"/>
+                </button>
+
+              <div class="imagens">
+                  <img src="./assets/capa.png" alt="capa" class="active"/>
+                  <img src="./assets/projeto.png" alt="Projeto"/>
+                  <img src="./assets/projeto-1.png" alt="Protjeto"/>
+                  <img src="./assets/código_.png" alt="Código"/>
+                  <img src="./assets/proti_baixa.png" alt="Aplicativo baixa fidelidade"/>
+                  <img src="./assets/design_alta.png" alt="Aplicativo alta fidelidade"/>
+                  <img src="./assets/suportebaixa.png" alt="Suporte protótipo"/>
+                  <img src="./assets/suporte.png" alt="Suporte final"/>
+                  <img src="./assets/capa.png" alt="Projeto final"/>
+              </div>
+
+                <button id="next" class="seta direita">
+                    <img src="./assets/SETA_DIREITA.png" alt="Próximo"/>
+                </button>
+          </div>
+           
+          <script src="carrosel.js"></script>
+    </section>
+
+    <footer>
+        <div class="parte1">
+            <a href="manual.html"> <img src="./assets/logo2.png" alt="logo: inAlert" class="logo-footer" id="voltar-topo"> </a>
+            <p class="texto-footer"> Projeto desenvolvido nas aulas de Estudos Avançados de Ciências <br> e suas Tecnologias visando assegurar as pessoas em ambientes com <br> alta concentração de gases inflamáveis. </p>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="parte2">
+            <a class="fc" href="faleconosco.html"><p>Fale conosco</p></a>
+            <p class="copy"> Copyright &copy; 2024 !n Alert Todos os direitos reservados </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('voltar-topo').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

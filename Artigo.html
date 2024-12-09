@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nosso artigo </title>
+    <link rel="stylesheet" href="estilo-artigo.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="artigo.html" class="nav-links">Artigo</a></li>
+                <a href="index.html"><li class="logo" class="nav-links"><img src="./assets/logo.png" alt="Logo"></li></a>
+                <li><a href="manual.html" class="nav-links">Manual</a></li>
+                <li><a href="sobre.html" class="nav-links">Sobre</a></li> 
+            </ul>   
+        </nav>
+
+        <!-- Botão do menu sanduíche -->
+        <div class="menu-mobile">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="navbar-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigo.html">Artigo</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="artigo">
+        <div class="title-botao">
+            <h1 class="artigo-title"> <span class="artigo-destaque"> Nosso artigo: </span> Detector móvel de gases inflamáveis 
+                com ESP-32 e sensor MQ2.
+            </h1>
+            
+            <a href="https://docs.google.com/document/d/1mq_Y3b2Rr7QAks-zCp8hz4RoB6aIXtGP8wIsD3HnhuE/edit?tab=t.0" target="_blank"> <button class="botao-artigo"> Visualizar </button> </a>
+        </div>
+    
+        <!--Colocar para abrir em uma nova aba, e colocar o pdf do artigo-->
+        <div class="article-image">
+            <img src="./assets/artigo-oficial.png" alt="capa do artigo" class="imagem">
+        </div>
+    </section>
+
+    <section class="app">
+        <div class="container"> 
+            <div class="nosso-app">
+               <h2 class="appTexto"> Acesse o nosso aplicativo! </h2>
+               <p class="texto"> O app do InAlert possibilita que o usuário<br>
+                   monitore diretamente de seu dispositivo <br>
+                   os vazamentos de gases em diferentes <br>
+                   ambientes que o sensor possa ficar.<br> </p>
+
+               <a href="faleconosco.html" class="ajuste"> 
+                   <button class="btn-baixar"> Baixe agora </button>
+               </a>
+            </div>
+
+            <div class="image-app"> 
+               <img src="./assets/app2.png" /> 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="parte1">
+            <a href="Artigo.html"> <img src="./assets/logo2.png" alt="logo: inAlert" class="logo-footer" id="voltar-topo"> </a>
+            <p class="texto-footer"> Projeto desenvolvido nas aulas de Estudos Avançados de Ciências <br> e suas Tecnologias visando assegurar as pessoas em ambientes com <br> alta concentração de gases inflamáveis. </p>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="parte2">
+            <a class="fc" target="_blank" href="faleconosco.html"><p>Fale conosco</p></a>
+            <p class="copy">Copyright &copy; 2024 !nAlert Todos os direitos reservados </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('voltar-topo').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+<script src="mobile-navbar.js"></script>
+</body>
+</html>

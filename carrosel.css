@@ -1,0 +1,72 @@
+:root{
+    --color-fundo:#071E22 ; 
+    --color-secundária: #3891A6 ;
+    --color-textop1: #ffffff ;
+    --color-titulo:#d64933;
+    --color-dest: #000000; 
+}
+
+body{
+    background-color:var(--color-fundo);   
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--color-textop1); 
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.spandestaque{
+    color: var(--color-titulo);
+}
+
+.carrossel {
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 650px; 
+    height: 350px;/* Ajuste a largura conforme necessário */
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .imagens {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .imagens img {
+    width: 100%;
+    display: none; /* Esconde todas as imagens inicialmente */
+  
+  }
+  
+  .imagens img.active {
+    display: block; /* Exibe apenas a imagem ativa */
+  }
+  
+  .seta {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  
+  }
+  
+  .seta img {
+    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+  }
+  
+  .direita{
+    margin-right: 10px;
+  }
+  
+  .esquerda {
+    margin-left: 10px; 
+  }

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Detector móvel de gases inflamáveis </title>
+    <link rel="stylesheet" href="estilo-index.css">
+    <script src="modal.js"> </script>
+
+<body>
+     <!-- Navbar -->
+     <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="artigo.html" class="nav-links">Artigo</a></li>
+                <a href="index.html"><li class="logo" class="nav-links"><img src="./assets/logo.png" alt="Logo"></li></a>
+                <li><a href="manual.html" class="nav-links">Manual</a></li>
+                <li><a href="sobre.html" class="nav-links">Sobre</a></li> 
+            </ul>   
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="textos-home">
+            <h1><span>DETECTOR</span> MÓVEL DE<br>GASES<span> INFLAMÁVEIS</span></h1>
+            <p>O detector móvel de gases inflamáveis é um projeto desenvolvido na plataforma arduino, utilizando componentes como a placa ESP-32, o sensor MQ2, entre outros. O principal objetivo é garantir a segurança e o bem-estar de pessoas em ambientes que possuem risco de vazamento desses gases, sendo capaz de detectar substâncias inflamáveis, alertando as pessoas sobre o nível de risco presente no ambiente.
+            </p>
+        </div>
+
+        <div class="home-images">
+            <div class="imagens1">
+                <img src="./assets/caixinha.png" alt="Placa ESP32" class="image1">
+            </div>
+            
+            <div class="imagens2">
+                <img src="./assets/code.png" alt="Sensor MQ2" class="image2">
+                <img src="./assets/cabos.png" alt="Configuração do Arduino" class="image3">
+            </div>
+        </div>
+    </section>
+
+    <section class="problematica">
+        <h1 class="titulo-prob"> Problemática </h1>
+
+        <div class="container">
+            <div class="divIconsProblematica"> 
+                <div class="icons">
+                    <img src="./assets/intro.png" alt=" Introdução" class="image">
+                </div> 
+
+                <div> 
+                    <button onclick="abrirModal()" class="buttonProblematica"> Introdução </button>
+                </div>
+
+                <div class="janela-modal" id="janela-modal">
+                    <div class="modal">
+                        <button class="fechar" id="fechar">X</button> 
+                        <h3> Introdução </h3>
+                        <p> Os gases Tóxicos são definidos como compostos que quando inalados, ingeridos ou absorvidos pela pele, podem causar danos, irreversíveis ou não ao ser humano. Mediante esse cenário, apresenta-se como temática, o desenvolvimento de um sensor para detecção de gases inflamáveis capaz de emitir um sinal sonoro quando houver vazamento indesejado. </p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="divIconsProblematica"> 
+                <div class="icons">
+                    <img src="./assets/ambiental.png" alt=" Questões ambientais" class="image">
+                </div>
+
+                <div> 
+                    <button onclick="modalabrir()" class="buttonProblematica"> Ambiental </button>
+                </div>
+
+                <div class="janela-modal2" id="janela-modal2">
+                    <div class="modal2">
+                        <button class="fechar2" id="fechar2">X</button> 
+                        <h3> Ambiental</h3>
+                        <p>Todos os gases, exceto o oxigênio, são asfixiantes. Parte dos vazamentos ocorridos, mesmo que de gases inertes ( que não são metabolizados pelo organismo humano), resultam na redução do teor de oxigênio em ambientes fechados, causando danos que podem culminar na morte das pessoas expostas. Assim, em locais confinados deve-se monitorar constantemente a concentração de oxigênio e os possíveis vazamentos.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="divIconsProblematica"> 
+                <div class="icons">
+                    <img src="./assets/acidentes.png" alt="Acidentes" class="image">
+                </div> 
+
+                <div> 
+                    <button onclick="abrir()" class="buttonProblematica"> Acidentes </button>
+                </div>
+
+                <div class="janela-modal3" id="janela-modal3">
+                    <div class="modal3">
+                        <button class="fechar3" id="fechar3">X</button> 
+                        <h3> Acidentes </h3>
+                        <p>Os vazamentos de gases ocorrem por falhas nas conexões ou dano nas tubulações de gases. Seus riscos englobam a possibilidade de intoxicação caso o gás não queime de maneira completa e libere gás tóxico, além de uma possível explosão e incêndio. Ademais, caso seja um gás como o monóxido de carbono, pode causar tonturas, náuseas e até a morte por asfixia. </p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="divIconsProblematica"> 
+                <div class="icons">
+                    <img src="./assets/conclusao.png" alt="Conclusão" class="image">
+                </div> 
+
+                <div> 
+                    <button onclick="conclusao()" class="buttonProblematica"> Conclusão </button>
+                </div>
+                
+                <div class="janelaconcl" id="janelaconcl">
+                    <div class="modconcl">
+                        <button class="fechaconcl" id="fechaconcl">X</button> 
+                        <h3> Conclusão </h3>
+                        <p>Portanto, o projeto InAlert, não só auxilia na proteção de pessoas contra gases nocivos, mas também se torna uma ferramenta no qual destaca a necessidade de soluções tecnológicas acessíveis e sustentáveis para o bem-estar coletivo. </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="objetivos">
+        <h1 class="titulo-obj"> <span class="destaque"> OBJETIVOS </span> DO PROJETO </h1>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="./assets/tinkercad.png" alt="Tinkercad Logo" class="card-image">
+                <p>Montar um protótipo do sensor de gases por meio da plataforma tinkercad</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/arduino.png" alt="Placa ESP32" class="card-image">
+                <p>Desenvolver um sistema de detecção de gases inflamáveis com o ESP-32</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/manual.png" alt="Manual de Montagem" class="card-image">
+                <p>Elaborar um manual de montagem para que o público possa reproduzir o projeto</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/artigo.png" alt="Tinkercad Logo" class="card-image">
+                <p>Escrever um artigo abordando todo o referencial teórico e processo de desenvolvimento do projeto</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/site.png" alt="Placa ESP32" class="card-image">
+                <p>Desenvolver um site informativo para divulgação do projeto elaborado</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/app.png" alt="Manual de Montagem" class="card-image">
+                <p>Desenvolver uma aplicação móvel para monitorar os dados de concentração de gás em cada ambiente</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="interdisciplinar">
+        <h1>A <span> emissão de gases </span> e sua relação com <br> <span class="destaque-titulo"> matemática </span> e as <span> ciências naturais </span></h1>
+    
+        <div class="cards-int">
+            <div class="card-int">
+                <div class="card-content">
+                    <div class="card-front">
+                        <img class="card-img-int" src="./assets/quimica.png">
+                    </div>
+
+                    <div class="card-back">
+                        <p>Gases inflamáveis são substâncias que misturadas ao oxigênio, e na presença de uma fonte de ignição, podem entrar em combustão. A composição química de alguns gases inflamáveis são: Metano (CH4), Butano (C4H10), Etileno (C2H4), Etano (C2H6), Propano (C3H8), Xileno (C8H10).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-int">
+                <div class="card-content">
+                    <div class="card-front">
+                        <img class="card-img-int" src="./assets/gases.png">
+                    </div>
+
+                    <div class="card-back">
+                        <p>O estudo dos gases envolve análise da matéria quando se apresenta no estado gasoso. Um gás é composto por átomos e moléculas e nesse estado físico, um sistema apresenta pouca interação entre suas partículas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-int">
+                <div class="card-content">
+                    <div class="card-front">
+                        <img class="card-img-int" src="./assets/seres.png">
+                    </div>
+
+                    <div class="card-back">
+                        <p> Além dos riscos de incêndios, os gases inflamáveis também causam riscos à saúde do indivíduo. Isso se deve principalmente à inalação dos vapores desses produtos, que resulta em doenças respiratórias crônicas como: asma, bronquite e rinite ocupacionais e câncer de pulmão.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-int">
+                <div class="card-content">
+                    <div class="card-front">
+                        <img class="imagem4" src="./assets/dados.png">
+                    </div>
+
+                    <div class="card-back">
+                        <p> Os bombeiros registraram 876 ocorrências envolvendo o gás de cozinha em 2023. Mas o maior índice foi em 2022, com 2.118 casos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Seleciona todos os cards
+        const cards = document.querySelectorAll('.card');
+
+        // Função para verificar se o card está visível na tela
+        function verificarAparicao() {
+            cards.forEach((card) => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    card.classList.add('aparecer');
+                }
+            });
+        }
+
+        // Evento de scroll para verificar a posição dos cards
+        window.addEventListener('scroll', verificarAparicao);
+
+        // Executa a verificação inicial
+        verificarAparicao();
+    </script>
+
+    <footer>
+        <div class="parte1">
+            <a href="Artigo.html"> <img src="./assets/logo2.png" alt="logo: inAlert" class="logo-footer" id="voltar-topo"> </a>
+            <p class="texto-footer"> Projeto desenvolvido nas aulas de Estudos Avançados de Ciências <br> e suas Tecnologias visando assegurar as pessoas em ambientes com <br> alta concentração de gases inflamáveis. </p>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="parte2">
+            <a class="fc" href="faleconosco.html"><p>Fale conosco</p></a>
+            <p class="copy"> Copyright &copy; 2024 !n Alert Todos os direitos reservados </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('voltar-topo').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a nossa equipe</title>
+    <link rel="stylesheet" href="estilo-sobre.css">
+</head>
+
+<body>
+    <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="artigo.html" class="nav-links">Artigo</a></li>
+                <a href="index.html"><li class="logo" class="nav-links"><img src="./assets/logo.png" alt="Logo"></li></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <li><a href="manual.html" class="nav-links">Manual</a></li>
+                <li><a href="sobre.html" class="nav-links">Sobre</a></li> 
+            </ul>   
+        </nav>
+
+        <!-- Botão do menu sanduíche -->
+        <div class="menu-mobile">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="navbar-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigo.html">Artigo</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body2">
+        <h1 class="titulo"> SOBRE A <span> EQUIPE </span> </h1>
+
+        <section class="integrantes">
+                <div class="card">
+                    <img src="./assets/cindy.png" alt="Foto da Cindy">
+                    <div class="name"> Cindy Kamile </div>
+                    <div class="role"> Documentação do projeto </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/cindy-kamile-santos-de-oliveira-6b1b541bb/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/gaby.png" alt="Foto da Gabrielly">
+                    <div class="name"> Gabrielly Nataly </div>
+                    <div class="role"> Desenvolvedora <br> Back-end </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/gabrielly-nataly-229310221/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/gi.png" alt="Foto da Giovanna">
+                    <div class="name"> Giovanna Santos </div>
+                    <div class="role"> Desenvolvedora <br> Web </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/giovanna-santos-51514b276/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/jaque.png" alt="Foto da Jaqueline">
+                    <div class="name"> Jaqueline Bastos </div>
+                    <div class="role"> Desenvolvedora <br> Web </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/jaqueline-bastos-a17348265/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/nico.png" alt="Foto do Nicolas">
+                    <div class="name"> Nicolas Santos </div>
+                    <div class="role"> Desenvolvedor <br> back-end </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/nicolas-dos-santos-5352802a4/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="parte1">
+            <a href="Artigo.html"> <img src="./assets/logo2.png" alt="logo: inAlert" class="logo-footer" id="voltar-topo"> </a>
+            <p class="texto-footer">Projeto desenvolvido nas aulas de Estudos Avançados em Ciências e suas Tecnologias e Estudos Avançados em Matemática, visando assegurar as pessoas em ambientes com alta concentração de gases inflamáveis. </p>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="parte2">
+            <a class="fc" href="faleconosco.html"><p>Fale conosco</p></a>
+            <p class="copy"> Copyright &copy; 2024 !n Alert Todos os direitos reservados </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('voltar-topo').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <script src="mobile-navbar.js"></script>
+</body>
+</html>
